@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Compilation</title>
+    <meta http-equiv="default-style" content="/style.css"
+        content="This is a cumulation of around 150 HTML elements that were on a reference sheet from W3C."
+        charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+</head>
+
+<body onbeforeunload="" onload="" onoffline="" ononline="" onpagehide="" onpageshow="" onpopstate="" onresize=""
+    onstorage="" onunload="">
+    <!--Create Console Log Events/Sayings That Work When These Scripts Are Done.-->
+    <!--Autocomplete function enabled-->
+    <img id="logo" src="../PVSLandingPage1/logo.png">
+    <a class="right" href="mailto:charlene@peters-services.com" target="_blank">Email Me</a>
+    <a class="right" href="https://www.upwork.com/fl/petersvirtualservices" target="_blank">Hire Me on Upwork</a>
+    <img id="mainPhoto" src="../PVSLandingPage1/pexels-pixabay-373076.jpg" alt="Peters Virtual Services">
+
+    <div class="pictureBackground">
+        <h1>100+ HTML Elements Used</h1>
+        <p class="photoText">Make sure to open your console log
+            (Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac).)
+            to see the sayings that will pop up will you follow
+            the instructions.</p>
+    </div>
+    <main>
+        </br>
+        <h2>HTML Elements At Work:</h2>
+
+        <div class="socialMedia">
+            <i class="fas fa-sitemap"></i>
+            </br>
+            <h2>Forms In Action</h2>
+            <p>Please Note That The Form Does Not Actually Submit</p>
+            <form enctype="text/plain" accept-charset="utf-8" onreset="">
+                <label for="goodbye">Goodbye - Disabled</label>
+                <input type="checkbox" disabled name="goodbye" id="goodbye">
+                <br />
+                <label for="hello">Hello</label>
+                <input type="checkbox" checked name="hello" id="hello"><br />
+                <label for="checkThis">Select This</label>
+                <!--Look into pattern and onselect - Don't Work-->
+                <input type="checkbox" name="checkThis" id="checkThis" onselect="helloOne()"><br />
+                <textarea tabindex="1" spellcheck onkeypress="ideaTen()" wrap="true" rows="5" maxlength="255" onscroll="ideaOne()"
+                    dirname="right" onpaste="ideaTwo()" autocomplete cols="3" autofocus
+                    onchange="ideaThree()">Press any key, paste something in here, or type until you must scroll.</textarea><br />
+                <textarea onkeyup="ideaEleven()"
+                    translate="yes">Press the up arrow.  If you type anything here, it can be translated.</textarea>
+                <!--Look into mouse functions.-->
+                <textarea tabindex="5" accesskey="s" onkeydown="ideaTwelve()" onmousedown="ideaFourteen()" onmouseenter="ideaFifeen()"
+                    onmouseleave="ideaSixteen()" onmousemove="ideaSeventeen()" onmouseout="ideaEighteen()"
+                    onmouseover="ideaNineteen()" onmouseup="ideaTwenty()"
+                    onmousewheel="ideaTwentyOne()">Press the down arrow or move your mouse after clicking in here. Use Alt + [s] (Windows/Linux), or Control + Option + [s] (Mac) to come back here.</textarea>
+                <br />
+                <label for="talkingPoints">Talking Points Dropdown:</label><br />
+                <input tabindex="2" list="talkingPoints">
+                <datalist multiple id="talkingPoints">
+                    <option value="Ideas">
+                    <option value="Laughing">
+                    <option value="TV">
+                </datalist>
+                </input><br /><br />
+                <input tabindex="4" oninput="ideaFour()" placeholder="OnInput" required /><br />
+                <input type="text" readonly placeholder="You can only read this box." /><br />
+                <!--Step Doesn't Work-->
+                <input type="search" size="5" step="2"
+                    placeholder="Search Using Only 5 Even Numbers."
+                    pattern="[0-9]" /><br />
+                <input tabindex="3" type="text">
+                <details ontoggle="ideaThirteen()" open="true">Details</details>
+                </li>
+                <button onblur="ideaFive()" onselect="helloOne()" type="submit"
+                    formaction="./index.html">Submit</button>
+        </div>
+
+        <div class="socialMedia">
+            <i class="fas fa-sitemap"></i>
+            </br>
+            <h2>More Mouse/Key Interactions</h2>
+            <ul>
+                <li oncontextmenu="rightClick()">Right click this line</li>
+                <!--Find out size of this file and do size element in download-->
+                <li>Download This File: <a hreflang="en" download href="Portfolio.JPG">Download</a></li>
+                <li ondblclick="ideaSix()">Double-click this line.</li>
+                <li onwheel="ideaSeven()">Clicking on this line and scrolling on your mouse will ignite this function.
+                </li>
+                <li oncopy="ideaEight()" oncut="ideaNine()">Copy this line</li>
+                <li oncut="ideaNine()" contenteditable="true">Cut (CTRL + X) this line</li>
+            </ul>
+        </div>
+
+
+        <div class="socialMedia">
+            <i class="fas fa-sitemap"></i>
+            </br>
+            <h2>Tables and More</h2>
+
+            <table>
+                <th scope="col">
+                <td>
+                    1
+                </td>
+                <td>
+                    2
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    4
+                </td>
+                </th>
+                <tr>
+                    <td rowspan="2">
+                        <ol start="10" data-fun-times="here" reversed>
+                            <li>These</li>
+                            <li>are</li>
+                            <li>fun</li>
+                            <li>times. </li>
+                            <li>(Numbers Reversed, Starting At 10)</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <li>Time: <time datetime="2017-02-14 20:00">2/14/2017</time></li>
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        4
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        <blockquote cite="http://www.petersvirtualservices.com">Blockquote is here.</blockquote>
+                    </td>
+                    <td>
+                        4
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        <li onafterprint="">Progress Bar: <meter id="rating" value="5" min="0" max="10" optimum="10">5
+                                out of 10</meter></li>
+                        <li onbeforeprint="">Progress Bar: <meter id="rating" value="5" low="0" high="10">5 out of
+                                10</meter></li>
+                        <li>Progress Bar: <progress value=".8">Progress Bar</progress></li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        <a href="#" onhashchange="">Link</a>
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        4
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        <span dir="right">This is right aligned.</span>
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        <span ondrag="" draggable="true" ondragend="" ondragenter="" ondropleave="" ondragove=""
+                            ondragstart="" ondrop="">Drag this line to the above textbox.</span>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="socialMedia">
+            <i class="fas fa-sitemap"></i>
+            </br>
+            <h2>Media Files</h2>
+            <!--Ready to Be Implemented When Needed
+        <iframe oninvalid="" sandbox="" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0KVefLXtYHwS7dRfyN-SaTUsIraZ8fJE
+    &q=Space+Needle,Seattle+WA">
+        </iframe>
+-->
+
+            <!--
+    Get Image Of Map
+    <img ismap usemap src=""/>
+-->
+
+            <!--
+    Get Audio File
+    <audio loop onloadeddata="" onprogress="" ontimeupdate="" onvolumechange="" onwaiting="" onratechange="" onseeked="" onseeking="" onstalled="" onloadedmetadata="" onpause="" onloadstart="" onemptied="" onended="" onerror="" onended="" oncuechange="" onplay="" onplaying="" onfocus="" ondurationchange="" oncanplay="" onabort="" oncanplaythrough="" onsuspend="" media="mp4" controls src="">
+    If you see this message, that means that your browser does not handle this file.
+<track label="subtitles" kind="subtitles" default oncuechange=""></track>
+</audio>
+
+<audio muted onabort="" src="" />
+-->
+
+            <!--
+    Get Video File
+
+    <video poster="" preload="" kind="subtitles" srclang="en"></video>
+-->
+
+<img srcset="../pvslogo.jpg"/>
+            <object data="https://www.upwork.com/freelancers/petersvirtualservices"></object>
+
+        </div>
+
+
+        <area coords="on" shape="square">
+
+    </main>
+
+
+
+
+
+<!--
+//Have no need to do so, but these functions would defer a script if needed.
+<script async src=""></script>
+<script defer src=""></script>
+-->
+    <script src="https://kit.fontawesome.com/a020887ec2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
