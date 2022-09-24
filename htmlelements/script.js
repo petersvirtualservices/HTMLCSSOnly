@@ -50,11 +50,11 @@ function ideaTen() {
 }
 
 function ideaEleven() {
-    console.log("You pressed the up key.")
+    console.log("You released a key.")
 }
 
 function ideaTwelve() {
-    console.log("You pressed the down key.")
+    console.log("You pressed a key down.")
 }
 
 function ideaThirteen() {
@@ -87,4 +87,48 @@ function ideaNineteen() {
 
 function ideaTwenty() {
     console.log("You scrolled the mouse up.")
+}
+
+function ideaTwentyOne() {
+    console.log("This is before the body loads.")
+}
+
+function ideaTwentyTwo() {
+    console.log("This is once the body loads.")
+}
+
+function ideaTwentyThree() {
+    console.log("This is when the script is offline.")
+}
+
+function ideaTwentyFour() {
+    console.log("This is when the script is online.")
+}
+
+function ideaTwentyFive() {
+    console.log("This is when you hide the page.")
+}
+
+function ideaTwentySix() {
+    console.log("This is when you unhide the page.")
+}
+
+
+function ideaTwentyEight() {
+    console.log("This is when you resize the page.")
+}
+
+function ideaTwentyNine() {
+    console.log("This is when you run this page from a server.")
+}
+
+function ideaThirty() {
+    console.log("This is when you unload the page.")
+}
+
+function ideaTwentySeven() {
+let stateObj = {
+    foo: "bar",
+}
+history.pushState(stateObj, "page 2", "bar.html")
 }

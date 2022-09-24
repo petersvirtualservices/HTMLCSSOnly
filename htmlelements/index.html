@@ -12,10 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
 </head>
 
-<body onbeforeunload="" onload="" onoffline="" ononline="" onpagehide="" onpageshow="" onpopstate="" onresize=""
-    onstorage="" onunload="">
-    <!--Create Console Log Events/Sayings That Work When These Scripts Are Done.-->
-    <!--Autocomplete function enabled-->
+<body onbeforeunload="ideaTwentyOne()" onload="ideaTwentyTwo()" onoffline="ideaTwentyThree()" ononline="ideaTwentyFour()" onpagehide="ideaTwentyFive()" onpageshow="ideaTwentySix()" onpopstate="ideaTwentySeven()" onresize="ideaTwentyEight()"
+    onstorage="ideaTwentyNine()" onunload="ideaThirty()">
     <img id="logo" src="../PVSLandingPage1/logo.png">
     <a class="right" href="mailto:charlene@peters-services.com" target="_blank">Email Me</a>
     <a class="right" href="https://www.upwork.com/fl/petersvirtualservices" target="_blank">Hire Me on Upwork</a>
@@ -35,6 +33,20 @@
         <div class="socialMedia">
             <i class="fas fa-sitemap"></i>
             </br>
+            <h2>Page Change Functions</h2>
+            <ul>
+                <li>You will see console log messages before the page loads, finishes loading and when it unloads.</li>
+                <li>You will see a message if you take the page offline and when you go back online.  (Can be done through the Google console.)</li>
+                <li>You will see a message when you minimize and unhide the page.</li>
+                <li>You will see a message when the page resizes.</li>
+                <li>You can run this page from a server and receive a console message.</li>
+                <li>You can change the state of this page and receive a console message.</li>
+            </ul>
+        </div>
+
+        <div class="socialMedia">
+            <i class="fas fa-sitemap"></i>
+            </br>
             <h2>Forms In Action</h2>
             <p>Please Note That The Form Does Not Actually Submit</p>
             <form enctype="text/plain" accept-charset="utf-8" onreset="">
@@ -48,14 +60,13 @@
                 <input type="checkbox" name="checkThis" id="checkThis" onselect="helloOne()"><br />
                 <textarea tabindex="1" spellcheck onkeypress="ideaTen()" wrap="true" rows="5" maxlength="255" onscroll="ideaOne()"
                     dirname="right" onpaste="ideaTwo()" autocomplete cols="3" autofocus
-                    onchange="ideaThree()">Press any key, paste something in here, or type until you must scroll.</textarea><br />
+                    onchange="ideaThree()" onkeydown="ideaTwelve()">Press any key, paste something in here, or type until you must scroll.</textarea><br />
                 <textarea onkeyup="ideaEleven()"
                     translate="yes">Press the up arrow.  If you type anything here, it can be translated.</textarea>
-                <!--Look into mouse functions.-->
-                <textarea tabindex="5" accesskey="s" onkeydown="ideaTwelve()" onmousedown="ideaFourteen()" onmouseenter="ideaFifeen()"
+                <textarea tabindex="5" accesskey="s"  onmousedown="ideaFourteen()" onmouseenter="ideaFifeen()"
                     onmouseleave="ideaSixteen()" onmousemove="ideaSeventeen()" onmouseout="ideaEighteen()"
                     onmouseover="ideaNineteen()" onmouseup="ideaTwenty()"
-                    onmousewheel="ideaTwentyOne()">Press the down arrow or move your mouse after clicking in here. Use Alt + [s] (Windows/Linux), or Control + Option + [s] (Mac) to come back here.</textarea>
+                    onmousewheel="ideaTwentyOne()">Press the down arrow or move your mouse within this box. Use Alt + [s] (Windows/Linux), or Control + Option + [s] (Mac) to come back here.</textarea>
                 <br />
                 <label for="talkingPoints">Talking Points Dropdown:</label><br />
                 <input tabindex="2" list="talkingPoints">
@@ -232,13 +243,14 @@
     <video poster="" preload="" kind="subtitles" srclang="en"></video>
 -->
 
-<img srcset="../pvslogo.jpg"/>
-            <object data="https://www.upwork.com/freelancers/petersvirtualservices"></object>
+
+<br/>
+<area coords="on" shape="circle"><object data="https://www.upwork.com/freelancers/petersvirtualservices"><img srcset="../htmlemailexamples/pvslogo.jpg" style="width:300px"></object></area>
 
         </div>
 
 
-        <area coords="on" shape="square">
+        
 
     </main>
 
