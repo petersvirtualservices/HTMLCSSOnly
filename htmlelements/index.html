@@ -48,8 +48,8 @@
             <i class="fas fa-sitemap"></i>
             </br>
             <h2>Forms In Action</h2>
-            <p>Please Note That The Form Does Not Actually Submit</p>
-            <form enctype="text/plain" accept-charset="utf-8" onreset="">
+            <p>Please Note That The Form Does Not Actually Submit.  Scroll Up To Start From Beginning.</p>
+            <form enctype="text/plain" accept-charset="utf-8" onreset="ideaTwentyEight()">
                 <label for="goodbye">Goodbye - Disabled</label>
                 <input type="checkbox" disabled name="goodbye" id="goodbye">
                 <br />
@@ -215,24 +215,27 @@
             <i class="fas fa-sitemap"></i>
             </br>
             <h2>Media Files</h2>
-            <!--Ready to Be Implemented When Needed
-        <iframe oninvalid="" sandbox="" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+<ul><li>This list has a iframe of a map that is commented out that can be uncommented when needed. It charges when used so I would like to keep that to a minimum.
+<!--<iframe oninvalid="" sandbox="" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
             referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0KVefLXtYHwS7dRfyN-SaTUsIraZ8fJE
     &q=Space+Needle,Seattle+WA">
         </iframe>
 -->
+</li>
+<li>Audio File - It will loop, and will run console logs when data is loaded, in progress, volume changes, updates, waits, change rate, searched, stalled, loaded, paused, started, emptied, ended, errored, changed cue, played, playing, focused, changes duration, when loading stops, can play entire audio, and suspends.<br/>
+    <audio loop onloadeddata="ideaTwentyNine()" onprogress="ideaThirty()" ontimeupdate="ideaThirtyOne()" onvolumechange="ideaThirtyTwo()" onwaiting="ideaThirtyThree()" onratechange="ideaThirtyFour()" onseeked="ideaThirtyFive()" onseeking="ideaThirtySix()" onstalled="ideaThirtySeven()" onloadedmetadata="ideaThirtyEight()" onpause="ideaThirtyNine()" onloadstart="ideaForty()" onemptied="ideaFortyOne()" onended="ideaFortyTwo()" onerror="ideaFortyThree()" oncuechange="ideaFortyFour()" onplay="ideaFortyFive()" onfocus="ideaFortySix()" ondurationchange="ideaFortySeven()" oncanplay="ideaFortyEight()" onabort="ideaFortyNine()" oncanplaythrough="ideaFifty()" onsuspend="ideaFiftyOne()" onplaying="ideaFiftyTwo()" media="mp4" controls src="./audio1303215328.m4a">
+    If you see this message, that means that your browser does not handle this file.
+<track label="subtitles" kind="subtitles" default oncuechange="ideaFiftyThree()"></track>
+</audio></li>
+</ul>
+            
 
             <!--
     Get Image Of Map
     <img ismap usemap src=""/>
 -->
 
-            <!--
-    Get Audio File
-    <audio loop onloadeddata="" onprogress="" ontimeupdate="" onvolumechange="" onwaiting="" onratechange="" onseeked="" onseeking="" onstalled="" onloadedmetadata="" onpause="" onloadstart="" onemptied="" onended="" onerror="" onended="" oncuechange="" onplay="" onplaying="" onfocus="" ondurationchange="" oncanplay="" onabort="" oncanplaythrough="" onsuspend="" media="mp4" controls src="">
-    If you see this message, that means that your browser does not handle this file.
-<track label="subtitles" kind="subtitles" default oncuechange=""></track>
-</audio>
+            
 
 <audio muted onabort="" src="" />
 -->

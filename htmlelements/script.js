@@ -132,3 +132,105 @@ let stateObj = {
 }
 history.pushState(stateObj, "page 2", "bar.html")
 }
+
+function ideaTwentyEight() {
+    console.log("This is when you reset the form.")
+}
+
+function ideaTwentyNine() {
+    console.log("This is when the audio loads.")
+}
+function ideaThirty() {
+    console.log("This is when the audio loading is in progress.")
+}
+function ideaThirtyOne() {
+    console.log("This is when the audio updates")
+}
+
+function ideaThirtyTwo() {
+    console.log("This is when the audio changes volume.")
+}
+
+function ideaThirtyThree() {
+    console.log("This is when the audio waits.")
+}
+
+function ideaThirtyFour() {
+    console.log("This is when the audio changes rate of speed.")
+}
+
+function ideaThirtyFive() {
+    console.log("This is when the audio has finished seeking.")
+}
+
+function ideaThirtySix() {
+    console.log("This is when the audio is seeking.")
+}
+
+function ideaThirtySeven() {
+    console.log("This is when the audio is stalled.")
+}
+
+function ideaThirtyEight() {
+    console.log("This is when the audio is loading meta data.")
+}
+
+function ideaThirtyNine() {
+    console.log("This is when the audio is paused.")
+}
+
+function ideaForty() {
+    console.log("This is when the audio starts loading.")
+}
+
+function ideaFortyOne() {
+    console.log("This is when the audio cache is emptied.")
+}
+
+function ideaFortyTwo() {
+    console.log("This is when the audio ended.")
+}
+
+function ideaFortyThree() {
+    console.log("This is when the audio has an error.")
+}
+
+function ideaFortyFour() {
+    console.log("This is when the audio has an on cue change.")
+}
+
+function ideaFortyFive() {
+    console.log("This is when the audio starts playing.")
+}
+
+function ideaFortySix() {
+    console.log("This is when the audio is clicked.")
+}
+
+function ideaFortySeven() {
+    console.log("This is when the audio playtime is changed.")
+}
+
+function ideaFortyEight() {
+    console.log("This is when the audio can start playing.")
+}
+
+function ideaFortyNine() {
+    console.log("This is when the audio's upload stops.")
+}
+
+function ideaFifty() {
+    console.log("This is when the audio can play through the entire audio.")
+}
+
+function ideaFiftyOne() {
+    console.log("This is when the audio's upload is paused.")
+}
+
+function ideaFiftyTwo() {
+    console.log("This is when the audio is playing.")
+}
+
+function ideaFiftyThree(){
+    console.log("This is when the subtitles change.")
+}
