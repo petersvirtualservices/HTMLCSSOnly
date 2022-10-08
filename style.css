@@ -85,10 +85,9 @@ main {
   margin: 20px auto;
   padding: 5px;
   color: white;
-  background-color: black;
+  background-color: lightgrey;
   display: block;
   width: 70%;
-  opacity: .2;
 }
 
 #action {

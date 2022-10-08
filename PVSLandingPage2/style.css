@@ -111,3 +111,7 @@ div, a {
     top:20px;
 }
   }
+
+  video {
+    opacity: 1;
+  }

@@ -234,3 +234,15 @@ function ideaFiftyTwo() {
 function ideaFiftyThree(){
     console.log("This is when the subtitles change.")
 }
+
+function ideaFiftyFour(){
+    console.log("This is before the video loads, but one is detected.")
+}
+
+function ideaFiftyFive(){
+    console.log("You just turned off this audio file.")
+}
+
+function ideaFiftySix(){
+    console.log("On hash change.")
+}

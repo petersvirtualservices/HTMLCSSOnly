@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
 </head>
 
-<body onbeforeunload="ideaTwentyOne()" onload="ideaTwentyTwo()" onoffline="ideaTwentyThree()" ononline="ideaTwentyFour()" onpagehide="ideaTwentyFive()" onpageshow="ideaTwentySix()" onpopstate="ideaTwentySeven()" onresize="ideaTwentyEight()"
-    onstorage="ideaTwentyNine()" onunload="ideaThirty()">
+<body onbeforeunload="ideaTwentyOne()" onload="ideaTwentyTwo()" onoffline="ideaTwentyThree()"
+    ononline="ideaTwentyFour()" onpagehide="ideaTwentyFive()" onpageshow="ideaTwentySix()"
+    onpopstate="ideaTwentySeven()" onresize="ideaTwentyEight()" onstorage="ideaTwentyNine()" onunload="ideaThirty()">
     <img id="logo" src="../PVSLandingPage1/logo.png">
     <a class="right" href="mailto:charlene@peters-services.com" target="_blank">Email Me</a>
     <a class="right" href="https://www.upwork.com/fl/petersvirtualservices" target="_blank">Hire Me on Upwork</a>
@@ -36,7 +37,8 @@
             <h2>Page Change Functions</h2>
             <ul>
                 <li>You will see console log messages before the page loads, finishes loading and when it unloads.</li>
-                <li>You will see a message if you take the page offline and when you go back online.  (Can be done through the Google console.)</li>
+                <li>You will see a message if you take the page offline and when you go back online. (Can be done
+                    through the Google console.)</li>
                 <li>You will see a message when you minimize and unhide the page.</li>
                 <li>You will see a message when the page resizes.</li>
                 <li>You can run this page from a server and receive a console message.</li>
@@ -48,7 +50,7 @@
             <i class="fas fa-sitemap"></i>
             </br>
             <h2>Forms In Action</h2>
-            <p>Please Note That The Form Does Not Actually Submit.  Scroll Up To Start From Beginning.</p>
+            <p>Please Note That The Form Does Not Actually Submit. Scroll Up To Start From Beginning.</p>
             <form enctype="text/plain" accept-charset="utf-8" onreset="ideaTwentyEight()">
                 <label for="goodbye">Goodbye - Disabled</label>
                 <input type="checkbox" disabled name="goodbye" id="goodbye">
@@ -56,14 +58,14 @@
                 <label for="hello">Hello</label>
                 <input type="checkbox" checked name="hello" id="hello"><br />
                 <label for="checkThis">Select This</label>
-                <!--Look into pattern and onselect - Don't Work-->
                 <input type="checkbox" name="checkThis" id="checkThis" onselect="helloOne()"><br />
-                <textarea tabindex="1" spellcheck onkeypress="ideaTen()" wrap="true" rows="5" maxlength="255" onscroll="ideaOne()"
-                    dirname="right" onpaste="ideaTwo()" autocomplete cols="3" autofocus
-                    onchange="ideaThree()" onkeydown="ideaTwelve()">Press any key, paste something in here, or type until you must scroll.</textarea><br />
+                <textarea tabindex="1" spellcheck onkeypress="ideaTen()" wrap="true" rows="5" maxlength="255"
+                    onscroll="ideaOne()" dirname="right" onpaste="ideaTwo()" autocomplete cols="3" autofocus
+                    onchange="ideaThree()"
+                    onkeydown="ideaTwelve()">Press any key, paste something in here, or type until you must scroll.</textarea><br />
                 <textarea onkeyup="ideaEleven()"
                     translate="yes">Press the up arrow.  If you type anything here, it can be translated.</textarea>
-                <textarea tabindex="5" accesskey="s"  onmousedown="ideaFourteen()" onmouseenter="ideaFifeen()"
+                <textarea tabindex="5" accesskey="s" onmousedown="ideaFourteen()" onmouseenter="ideaFifeen()"
                     onmouseleave="ideaSixteen()" onmousemove="ideaSeventeen()" onmouseout="ideaEighteen()"
                     onmouseover="ideaNineteen()" onmouseup="ideaTwenty()"
                     onmousewheel="ideaTwentyOne()">Press the down arrow or move your mouse within this box. Use Alt + [s] (Windows/Linux), or Control + Option + [s] (Mac) to come back here.</textarea>
@@ -78,9 +80,7 @@
                 </input><br /><br />
                 <input tabindex="4" oninput="ideaFour()" placeholder="OnInput" required /><br />
                 <input type="text" readonly placeholder="You can only read this box." /><br />
-                <!--Step Doesn't Work-->
-                <input type="search" size="5" step="2"
-                    placeholder="Search Using Only 5 Even Numbers."
+                <input type="search" size="5" step="2" placeholder="Search Using Only 5 Even Numbers."
                     pattern="[0-9]" /><br />
                 <input tabindex="3" type="text">
                 <details ontoggle="ideaThirteen()" open="true">Details</details>
@@ -95,7 +95,6 @@
             <h2>More Mouse/Key Interactions</h2>
             <ul>
                 <li oncontextmenu="rightClick()">Right click this line</li>
-                <!--Find out size of this file and do size element in download-->
                 <li>Download This File: <a hreflang="en" download href="Portfolio.JPG">Download</a></li>
                 <li ondblclick="ideaSix()">Double-click this line.</li>
                 <li onwheel="ideaSeven()">Clicking on this line and scrolling on your mouse will ignite this function.
@@ -183,7 +182,7 @@
                         1
                     </td>
                     <td>
-                        <a href="#" onhashchange="">Link</a>
+                        <a href="#" onhashchange="ideaFiftySix()">Link</a>
                     </td>
                     <td>
                         3
@@ -215,53 +214,65 @@
             <i class="fas fa-sitemap"></i>
             </br>
             <h2>Media Files</h2>
-<ul><li>This list has a iframe of a map that is commented out that can be uncommented when needed. It charges when used so I would like to keep that to a minimum.
-<!--<iframe oninvalid="" sandbox="" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+            <ul>
+                <li>This list has a iframe of a map that is commented out that can be uncommented when needed. It
+                    charges when used so I would like to keep that to a minimum.
+                    <!--<iframe oninvalid="" sandbox="" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
             referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0KVefLXtYHwS7dRfyN-SaTUsIraZ8fJE
     &q=Space+Needle,Seattle+WA">
         </iframe>
 -->
-</li>
-<li>Audio File - It will loop, and will run console logs when data is loaded, in progress, volume changes, updates, waits, change rate, searched, stalled, loaded, paused, started, emptied, ended, errored, changed cue, played, playing, focused, changes duration, when loading stops, can play entire audio, and suspends.<br/>
-    <audio loop onloadeddata="ideaTwentyNine()" onprogress="ideaThirty()" ontimeupdate="ideaThirtyOne()" onvolumechange="ideaThirtyTwo()" onwaiting="ideaThirtyThree()" onratechange="ideaThirtyFour()" onseeked="ideaThirtyFive()" onseeking="ideaThirtySix()" onstalled="ideaThirtySeven()" onloadedmetadata="ideaThirtyEight()" onpause="ideaThirtyNine()" onloadstart="ideaForty()" onemptied="ideaFortyOne()" onended="ideaFortyTwo()" onerror="ideaFortyThree()" oncuechange="ideaFortyFour()" onplay="ideaFortyFive()" onfocus="ideaFortySix()" ondurationchange="ideaFortySeven()" oncanplay="ideaFortyEight()" onabort="ideaFortyNine()" oncanplaythrough="ideaFifty()" onsuspend="ideaFiftyOne()" onplaying="ideaFiftyTwo()" media="mp4" controls src="./audio1303215328.m4a">
-    If you see this message, that means that your browser does not handle this file.
-<track label="subtitles" kind="subtitles" default oncuechange="ideaFiftyThree()"></track>
-</audio></li>
-</ul>
-            
+                </li>
+                <br />
+                <li>Audio File - It will loop, and will run console logs when data is loaded, in progress, volume
+                    changes, updates, waits, change rate, searched, stalled, loaded, paused, started, emptied, ended,
+                    errored, changed cue, played, playing, focused, changes duration, when loading stops, can play
+                    entire audio, and suspends.<br />
+                    <audio loop onloadeddata="ideaTwentyNine()" onprogress="ideaThirty()" ontimeupdate="ideaThirtyOne()"
+                        onvolumechange="ideaThirtyTwo()" onwaiting="ideaThirtyThree()" onratechange="ideaThirtyFour()"
+                        onseeked="ideaThirtyFive()" onseeking="ideaThirtySix()" onstalled="ideaThirtySeven()"
+                        onloadedmetadata="ideaThirtyEight()" onpause="ideaThirtyNine()" onloadstart="ideaForty()"
+                        onemptied="ideaFortyOne()" onended="ideaFortyTwo()" onerror="ideaFortyThree()"
+                        oncuechange="ideaFortyFour()" onplay="ideaFortyFive()" onfocus="ideaFortySix()"
+                        ondurationchange="ideaFortySeven()" oncanplay="ideaFortyEight()" onabort="ideaFortyNine()"
+                        oncanplaythrough="ideaFifty()" onsuspend="ideaFiftyOne()" onplaying="ideaFiftyTwo()" media="mp4"
+                        controls src="./audio1303215328.m4a">
+                        If you see this message, that means that your browser does not handle this file.
+                    </audio>
+                </li>
+                <br />
+                <li>Video file - It will give console logs when before it loads and when the subtitles load.
 
-            <!--
-    Get Image Of Map
-    <img ismap usemap src=""/>
--->
-
-            
-
-<audio muted onabort="" src="" />
--->
-
-            <!--
-    Get Video File
-
-    <video poster="" preload="" kind="subtitles" srclang="en"></video>
--->
-
-
-<br/>
-<area coords="on" shape="circle"><object data="https://www.upwork.com/freelancers/petersvirtualservices"><img srcset="../htmlemailexamples/pvslogo.jpg" style="width:300px"></object></area>
-
+                    <video style="height:300px; width: 500px" poster="Screenshot 2022-10-07 193522.jpg"
+                        preload="ideaFiftyFour()" srclang="en" controls>
+                        <source src="./Ocean - 74888.mp4" type="video/mp4">
+                        <track label="subtitles" kind="subtitles" default oncuechange="ideaFiftyThree()">
+                        </track>
+                    </video>
+                </li>
+                <li>Image of a map that you can click on the route to see the Google Maps page:<br />
+                    <map name="#GoogleMap">
+                        <area shape="rect" coords="100,400,700,50"
+                            href="https://www.google.com/maps/dir/Space+Needle,+400+Broad+St,+Seattle,+WA+98109/Las+Vegas,+Nevada/@41.809872,-127.7008722,5z/data=!4m14!4m13!1m5!1m1!1s0x5490151f4ed5b7f9:0xdb2ba8689ed0920d!2m2!1d-122.3492774!2d47.6205063!1m5!1m1!1s0x80beb782a4f57dd1:0x3accd5e6d5b379a3!2m2!1d-115.1391009!2d36.171563!3e0"
+                            alt="Seattle to Las Vegas"></area>
+                    </map>
+                    <img style="height:300px; width: 500px" ismap usemap="#GoogleMap" src="GoogleMap.jpg" />
+                </li>
+                <li><br />
+                    <object data="https://www.upwork.com/freelancers/petersvirtualservices"><img
+                            srcset="../htmlemailexamples/pvslogo.jpg" style="width:300px"></object>
+                </li>
+            </ul>
         </div>
 
 
-        
+        <audio muted onabort="" src="./audio1303215328.m4a" />
+   
 
     </main>
 
 
-
-
-
-<!--
+    <!--
 //Have no need to do so, but these functions would defer a script if needed.
 <script async src=""></script>
 <script defer src=""></script>
