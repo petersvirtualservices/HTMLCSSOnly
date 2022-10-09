@@ -249,9 +249,18 @@
                     <video style="height:300px; width: 500px" poster="Screenshot 2022-10-07 193522.jpg"
                         preload="ideaFiftyFour()" srclang="en" controls>
                         <source src="./Ocean - 74888.mp4" type="video/mp4">
-                        <track label="subtitles" kind="subtitles" default oncuechange="ideaFiftyThree()">
-                        </track>
-                    </video>
+                        </video>
+                        <br/>
+                    <video style="height:300px; width: 500px" id="video" controls preload="metadata">
+                        <!--https://youtu.be/4EAuUOcAS5Y-->
+                        <source src="./Movement Analyzer Instructions.mp4" default oncuechange="ideaFiftyThree()"/>
+                        <track
+                          label="English"
+                          kind="subtitles"
+                          srclang="en"
+                          src="./Movement Analyzer Instructions.vtt"
+                          default />
+                      </video>
                 </li>
                 <li>Image of a map that you can click on the route to see the Google Maps page:<br />
                     <map name="#GoogleMap">
