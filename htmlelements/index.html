@@ -4,17 +4,31 @@
 <head>
     <title>HTML Compilation</title>
     <meta http-equiv="default-style" content="../style.css"
-        content="This is a cumulation of around 150 HTML elements that were on a reference sheet from W3C."
+        content="This is a cumulation of around 150 HTML elements that were on a reference sheet from W3Schools."
         charset="utf-8">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
 </head>
 
 <body onbeforeunload="ideaTwentyOne()" onload="ideaTwentyTwo()" onoffline="ideaTwentyThree()"
-    ononline="ideaTwentyFour()" onpagehide="ideaTwentyFive()" onpageshow="ideaTwentySix()"
-    onpopstate="ideaTwentySeven()" onresize="ideaTwentyEight()" onstorage="ideaTwentyNine()" onunload="ideaThirty()">
+    ononline="ideaTwentyFour()" onpagehide="ideaTwentyFive()" onpageshow="ideaTwentySix()" onpopstate="ideaTwentySeven()" onresize="ideaTwentyEight()" onstorage="ideaTwentyNine()" onunload="ideaThirty()">
     <img id="logo" src="../PVSLandingPage1/logo.png">
     <a class="right" href="mailto:charlene@peters-services.com" target="_blank">Email Me</a>
     <a class="right" href="https://www.upwork.com/fl/petersvirtualservices" target="_blank">Hire Me on Upwork</a>
@@ -37,8 +51,7 @@
             <h2>Page Change Functions</h2>
             <ul>
                 <li>You will see console log messages before the page loads, finishes loading and when it unloads.</li>
-                <li>You will see a message if you take the page offline and when you go back online. (Can be done
-                    through the Google console.)</li>
+                <li>You will see a message if you take the page offline and when you go back online. (Can be done through the Google console.)</li>
                 <li>You will see a message when you minimize and unhide the page.</li>
                 <li>You will see a message when the page resizes.</li>
                 <li>You can run this page from a server and receive a console message.</li>
@@ -50,26 +63,24 @@
             <i class="fas fa-sitemap"></i>
             </br>
             <h2>Forms In Action</h2>
-            <p>Please Note That The Form Does Not Actually Submit. Scroll Up To Start From Beginning.</p>
+            <p>Please Note That The Form Does Not Actually Submit Anywhere. Scroll Up To Start From Beginning.</p>
             <form enctype="text/plain" accept-charset="utf-8" onreset="ideaTwentyEight()">
                 <label for="goodbye">Goodbye - Disabled</label>
                 <input type="checkbox" disabled name="goodbye" id="goodbye">
                 <br />
                 <label for="hello">Hello</label>
                 <input type="checkbox" checked name="hello" id="hello"><br />
-                <!--Look into pattern and onselect - Don't Work-->
                 <label for="checkThis">Select This</label>
                 <input type="checkbox" name="checkThis" id="checkThis" onselect="helloOne()"><br />
-                <textarea tabindex="1" spellcheck onkeypress="ideaTen()" wrap="true" rows="5" maxlength="255"
-                    onscroll="ideaOne()" dirname="right" onpaste="ideaTwo()" autocomplete cols="3" autofocus
+                <textarea name="example" tabindex="1" spellcheck onkeypress="ideaTen()" wrap="true" rows="5" maxlength="255"
+                    onscroll="ideaOne()" dirname="example.dir" onpaste="ideaTwo()" autocomplete cols="3" autofocus
                     onchange="ideaThree()"
                     onkeydown="ideaTwelve()">Press any key, paste something in here, or type until you must scroll.</textarea><br />
                 <textarea onkeyup="ideaEleven()"
                     translate="yes">Press the up arrow.  If you type anything here, it can be translated.</textarea>
                 <textarea tabindex="5" accesskey="s" onmousedown="ideaFourteen()" onmouseenter="ideaFifeen()"
                     onmouseleave="ideaSixteen()" onmousemove="ideaSeventeen()" onmouseout="ideaEighteen()"
-                    onmouseover="ideaNineteen()" onmouseup="ideaTwenty()"
-                    onmousewheel="ideaTwentyOne()">Press the down arrow or move your mouse within this box. Use Alt + [s] (Windows/Linux), or Control + Option + [s] (Mac) to come back here.</textarea>
+                    onmouseover="ideaNineteen()" onmouseup="ideaTwenty()">Press the down arrow or move your mouse within this box. Use Alt + [s] (Windows/Linux), or Control + Option + [s] (Mac) to come back here.</textarea>
                 <br />
                 <label for="talkingPoints">Talking Points Dropdown:</label><br />
                 <input tabindex="2" list="talkingPoints">
@@ -81,10 +92,11 @@
                 </input><br /><br />
                 <input tabindex="4" oninput="ideaFour()" placeholder="OnInput" required /><br />
                 <input type="text" readonly placeholder="You can only read this box." /><br />
-                <!--Step Doesn't Work-->
-                <input type="search" size="5" step="2" placeholder="Search Using Only 5 Even Numbers."
-                    pattern="[0-9]" /><br />
+                           <input type="search" size="20"  placeholder="Search"  /><br />
+                    <input type="number" step="2" placeholder="This box will only go up even numbers." /><br/>
+                    <input type="text" pattern="[0-9]"/><br/>
                 <input tabindex="3" type="text">
+                <br/>
                 <details ontoggle="ideaThirteen()" open="true">Details</details>
                 </li>
                 <button onblur="ideaFive()" onselect="helloOne()" type="submit"
@@ -97,7 +109,6 @@
             <h2>More Mouse/Key Interactions</h2>
             <ul>
                 <li oncontextmenu="rightClick()">Right click this line</li>
-                <!--Find out size of this file and do size element in download-->
                 <li>Download This File: <a hreflang="en" download href="Portfolio.JPG">Download</a></li>
                 <li ondblclick="ideaSix()">Double-click this line.</li>
                 <li onwheel="ideaSeven()">Clicking on this line and scrolling on your mouse will ignite this function.
@@ -173,9 +184,9 @@
                         3
                     </td>
                     <td>
-                        <li onafterprint="">Progress Bar: <meter id="rating" value="5" min="0" max="10" optimum="10">5
+                        <li onafterprint="ideaFiftySeven()">Progress Bar: <meter id="rating" value="5" min="0" max="10" optimum="10">5
                                 out of 10</meter></li>
-                        <li onbeforeprint="">Progress Bar: <meter id="rating" value="5" low="0" high="10">5 out of
+                        <li onbeforeprint="ideaFiftyEight()">Progress Bar: <meter id="rating" value="5" low="0" high="10">5 out of
                                 10</meter></li>
                         <li>Progress Bar: <progress value=".8">Progress Bar</progress></li>
                     </td>
@@ -191,7 +202,7 @@
                         3
                     </td>
                     <td>
-                        4
+                        <span dir="right">This is right aligned.</span>
                     </td>
                 </tr>
                 <tr>
@@ -199,14 +210,15 @@
                         1
                     </td>
                     <td>
-                        <span dir="right">This is right aligned.</span>
+                        
                     </td>
                     <td>
-                        3
+                        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">Drop in this box.</div>
                     </td>
                     <td>
-                        <span ondrag="" draggable="true" ondragend="" ondragenter="" ondropleave="" ondragove=""
-                            ondragstart="" ondrop="">Drag this line to the above textbox.</span>
+                       
+                        <span id="drag1" ondrag="ideaFiftyNine()" draggable="true" ondragend="ideaSixty()" ondragenter="ideaSixtyOne()" ondropleave="true" ondragover="ideaSixtyFive()" ondragstart="drag(event)"
+                            ondrop="ideaSixtyThree()">Drag this line to the box to the left.</span>
                     </td>
                 </tr>
 
@@ -218,19 +230,16 @@
             </br>
             <h2>Media Files</h2>
             <ul>
-                <li>This list has a iframe of a map that is commented out that can be uncommented when needed. It
-                    charges when used so I would like to keep that to a minimum.
-                    <!--<iframe oninvalid="" sandbox="" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                <li>This list has a iframe of a map that is commented out that can be uncommented when needed. It charges when used so I would like to keep that to a minimum.
+                    <!--
+                    <iframe oninvalid="ideaSixtyFour()" sandbox="" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
             referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0KVefLXtYHwS7dRfyN-SaTUsIraZ8fJE
     &q=Space+Needle,Seattle+WA">
         </iframe>
 -->
                 </li>
                 <br />
-                <li>Audio File - It will loop, and will run console logs when data is loaded, in progress, volume
-                    changes, updates, waits, change rate, searched, stalled, loaded, paused, started, emptied, ended,
-                    errored, changed cue, played, playing, focused, changes duration, when loading stops, can play
-                    entire audio, and suspends.<br />
+                <li>Audio File - It will loop, and will run console logs when data is loaded, in progress, volume changes, updates, waits, change rate, searched, stalled, loaded, paused, started, emptied, ended, errored, changed cue, played, playing, focused, changes duration, when loading stops, can play entire audio, and suspends.<br />
                     <audio loop onloadeddata="ideaTwentyNine()" onprogress="ideaThirty()" ontimeupdate="ideaThirtyOne()"
                         onvolumechange="ideaThirtyTwo()" onwaiting="ideaThirtyThree()" onratechange="ideaThirtyFour()"
                         onseeked="ideaThirtyFive()" onseeking="ideaThirtySix()" onstalled="ideaThirtySeven()"
@@ -247,7 +256,7 @@
                 <li>Video file - It will give console logs when before it loads and when the subtitles load.
 
                     <video style="height:300px; width: 500px" poster="Screenshot 2022-10-07 193522.jpg"
-                        preload="ideaFiftyFour()" srclang="en" controls>
+                        preload="true" srclang="en" controls>
                         <source src="./Ocean - 74888.mp4" type="video/mp4">
                         </video>
                         <br/>

@@ -246,3 +246,35 @@ function ideaFiftyFive(){
 function ideaFiftySix(){
     console.log("On hash change.")
 }
+
+function ideaFiftySeven(){
+    console.log("This will pop up after you print this section.")
+}
+
+function ideaFiftyEight(){
+    console.log("This will pop up right before you print.")
+}
+
+function ideaFiftyNine(){
+    console.log("This will pop up as your are dragging this section.")
+}
+
+function ideaSixty(){
+    console.log("This will pop up when you are done dragging this section.")
+}
+
+function ideaSixtyOne(){
+    console.log("This will pop up when you have entered the area you can drag it in.")
+}
+
+function ideaSixtyThree(){
+    console.log("This will pop up when you have dropped your section after dragging.")
+}
+
+function ideaSixtyFour(){
+    console.log("This will pop up if this link is invalid.")
+}
+
+function ideaSixtyFive(){
+    console.log("This will pop up while you are dragging from the original box.")
+}
