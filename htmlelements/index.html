@@ -57,6 +57,7 @@
                 <br />
                 <label for="hello">Hello</label>
                 <input type="checkbox" checked name="hello" id="hello"><br />
+                <!--Look into pattern and onselect - Don't Work-->
                 <label for="checkThis">Select This</label>
                 <input type="checkbox" name="checkThis" id="checkThis" onselect="helloOne()"><br />
                 <textarea tabindex="1" spellcheck onkeypress="ideaTen()" wrap="true" rows="5" maxlength="255"
@@ -80,6 +81,7 @@
                 </input><br /><br />
                 <input tabindex="4" oninput="ideaFour()" placeholder="OnInput" required /><br />
                 <input type="text" readonly placeholder="You can only read this box." /><br />
+                <!--Step Doesn't Work-->
                 <input type="search" size="5" step="2" placeholder="Search Using Only 5 Even Numbers."
                     pattern="[0-9]" /><br />
                 <input tabindex="3" type="text">
@@ -95,6 +97,7 @@
             <h2>More Mouse/Key Interactions</h2>
             <ul>
                 <li oncontextmenu="rightClick()">Right click this line</li>
+                <!--Find out size of this file and do size element in download-->
                 <li>Download This File: <a hreflang="en" download href="Portfolio.JPG">Download</a></li>
                 <li ondblclick="ideaSix()">Double-click this line.</li>
                 <li onwheel="ideaSeven()">Clicking on this line and scrolling on your mouse will ignite this function.
